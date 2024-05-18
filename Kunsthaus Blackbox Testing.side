@@ -1,0 +1,381 @@
+{
+  "id": "b348e04f-f8ec-4c84-8d31-519f4a5dbdbb",
+  "version": "2.0",
+  "name": "Kunsthaus Blackbox Testing",
+  "url": "https://www.kunsthaus.ch/en/museum/",
+  "tests": [{
+    "id": "7d8ebecc-538a-47b1-b601-1160671ce148",
+    "name": "Opening Hours Search",
+    "commands": [{
+      "id": "d11197a5-da00-40a4-966f-59e87f65cbf3",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.kunsthaus.ch/en/museum/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67a7bed0-f8fb-4655-aa87-57d54b0af6c3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7263a60-d19b-4dc1-add8-87c90d403acc",
+      "comment": "",
+      "command": "click",
+      "target": "id=Line-3-Copy",
+      "targets": [
+        ["id=Line-3-Copy", "id"],
+        ["css=.show-on-desktop #Line-3-Copy", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "2491d991-272a-444b-a357-1abbd2abeca9",
+      "comment": "",
+      "command": "click",
+      "target": "name=query",
+      "targets": [
+        ["name=query", "name"],
+        ["css=.side-navigation-search-form > input", "css:finder"],
+        ["xpath=//input[@name='query']", "xpath:attributes"],
+        ["xpath=//div[@id='main-header-wrapper']/nav/div[2]/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "27c3246e-6678-4033-8f37-c47f3d18cb4f",
+      "comment": "",
+      "command": "type",
+      "target": "name=query",
+      "targets": [
+        ["name=query", "name"],
+        ["css=.side-navigation-search-form > input", "css:finder"],
+        ["xpath=//input[@name='query']", "xpath:attributes"],
+        ["xpath=//div[@id='main-header-wrapper']/nav/div[2]/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Öffnungszeiten"
+    }, {
+      "id": "f413d5e4-44e9-452c-921e-0a4bb0b77364",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=query",
+      "targets": [
+        ["name=query", "name"],
+        ["css=.side-navigation-search-form > input", "css:finder"],
+        ["xpath=//input[@name='query']", "xpath:attributes"],
+        ["xpath=//div[@id='main-header-wrapper']/nav/div[2]/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "f3e01ce7-2063-443e-916b-9c20af2376ce",
+      "comment": "",
+      "command": "click",
+      "target": "css=a:nth-child(2) > h4",
+      "targets": [
+        ["css=a:nth-child(2) > h4", "css:finder"],
+        ["xpath=//main[@id='main-content']/article/main/div/div/a/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Visitor information')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d3a57a9-21ec-4130-9db0-20ad8729bca5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.active .column:nth-child(1) > p:nth-child(2)",
+      "targets": [
+        ["css=.active .column:nth-child(1) > p:nth-child(2)", "css:finder"],
+        ["xpath=//main[@id='main-content']/article/main/div/div/div/div/div/div/div/p", "xpath:idRelative"],
+        ["xpath=//div/div/div/p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ff97d8d-31de-404c-8601-c91509afca26",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tabs-content-container",
+      "targets": [
+        ["css=.tabs-content-container", "css:finder"],
+        ["xpath=//main[@id='main-content']/article/main/div/div", "xpath:idRelative"],
+        ["xpath=//main/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2f11111-53d7-45d1-acd9-c6fc5cc68ff2",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.active .module-title",
+      "targets": [
+        ["css=.active .module-title", "css:finder"],
+        ["xpath=//main[@id='main-content']/article/main/div/div/div/div/div/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Opening hours')]", "xpath:innerText"]
+      ],
+      "value": "Opening hours"
+    }]
+  }, {
+    "id": "984cf4ee-4293-4ef8-91f7-66441845b134",
+    "name": "Navigation Test",
+    "commands": [{
+      "id": "95fca69a-a0ce-460f-98da-785f048ee28e",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.kunsthaus.ch/en/museum/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f11f8fa-3d6f-48df-a835-8ac4b078b001",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bdad1b55-060d-423c-bf31-0920f39a37e8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.main-menu-controller > .menu-level-item-0:nth-child(1) span",
+      "targets": [
+        ["css=.main-menu-controller > .menu-level-item-0:nth-child(1) span", "css:finder"],
+        ["xpath=//div[@id='main-header-wrapper']/div/div/div/ul/li/a/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Plan your visit')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "09fa0b4e-c60e-4b03-af50-afdc60a70694",
+      "comment": "",
+      "command": "click",
+      "target": "css=.module:nth-child(2) li:nth-child(2) > a",
+      "targets": [
+        ["css=.module:nth-child(2) li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Getting here')]", "xpath:link"],
+        ["xpath=//main[@id='main-content']/article/main/div[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//div[2]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fa4c157-fb7d-449f-8c9e-1c4faca55dbc",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=VIEW IN GOOGLE MAPS",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2538f0d5-eff7-4781-8b4c-d62e3e623624",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=VIEW IN GOOGLE MAPS",
+      "targets": [
+        ["linkText=VIEW IN GOOGLE MAPS", "linkText"],
+        ["css=.column > p:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'VIEW IN GOOGLE MAPS')]", "xpath:link"],
+        ["xpath=//main[@id='main-content']/article/main/div[2]/div/div[2]/div/div/div/div/p[3]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://www.google.com/maps/place/Kunsthaus/@47.3702367,8.5459709,17z/data=!3m1!4b1!4m5!3m4!1s0x479aa0ac119a5dc3:0xd9cdb23ca2e00ba3!8m2!3d47.3702367!4d8.5481596']", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/div/p[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'VIEW IN GOOGLE MAPS')]", "xpath:innerText"]
+      ],
+      "value": "Kunsthaus Zürich - Google Maps"
+    }]
+  }, {
+    "id": "8d0e124d-9b84-4760-8b50-11d516af0793",
+    "name": "Homepage-Titel",
+    "commands": [{
+      "id": "2e9d2085-244d-475c-b10c-3f2425bed951",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.kunsthaus.ch/en/museum/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "81d6f613-3ad9-4c27-a477-941eb174aaa1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "974x1015",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1bf7e6a3-f2e7-4ab0-bbf7-6bca64fdbee9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.h1",
+      "targets": [
+        ["css=.h1", "css:finder"],
+        ["xpath=//main[@id='main-content']/article/header/h1", "xpath:idRelative"],
+        ["xpath=//header/h1", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "00d178d6-7b8e-437e-8a01-8c62a3fbb81c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.h1",
+      "targets": [],
+      "value": "THE MUSEUM"
+    }, {
+      "id": "07a6e478-6a57-4ddb-8149-c22a89309a56",
+      "comment": "",
+      "command": "click",
+      "target": "css=.module-teaser > .module-title",
+      "targets": [
+        ["css=.module-teaser > .module-title", "css:finder"],
+        ["xpath=//main[@id='main-content']/article/main/div[8]/h2", "xpath:idRelative"],
+        ["xpath=//div[8]/h2", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ce6e1dc-52d1-4b5b-ab9b-c436288041bc",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.module-teaser > .module-title",
+      "targets": [],
+      "value": "WE RECOMMEND"
+    }, {
+      "id": "e319584b-0cd6-4565-b9ec-27c8e433361c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.newsletter > h4",
+      "targets": [
+        ["css=.newsletter > h4", "css:finder"],
+        ["xpath=//footer[@id='main-footer']/div/div[3]/div[4]/h4", "xpath:idRelative"],
+        ["xpath=//div[4]/h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'NEWSLETTER')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e748eae1-6f8e-4d65-b5d3-762982a80e9c",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.newsletter > h4",
+      "targets": [],
+      "value": "NEWSLETTER"
+    }]
+  }, {
+    "id": "7aa06f7a-8576-4324-9efa-bcc2da340038",
+    "name": "Produkt zum Warenkorb",
+    "commands": [{
+      "id": "044151ae-1b0e-4f54-bec2-19970f0fde04",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.kunsthaus.ch/en/museum/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "311059ee-6166-40f1-b101-d1854670b925",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "189a7ef2-74b1-4a95-abb9-4860cb419ac9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ticket span",
+      "targets": [
+        ["css=.ticket span", "css:finder"],
+        ["xpath=//div[@id='main-header-wrapper']/div/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//header/div/div/ul/li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Tickets')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0ace757-aad7-4b04-9c61-22500376ab0d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#buy-button-1 > span",
+      "targets": [
+        ["css=#buy-button-1 > span", "css:finder"],
+        ["xpath=//a[@id='buy-button-1']/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/span/div[2]/div/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d944b8ec-e99a-4e40-a30e-5470f46d8d00",
+      "comment": "",
+      "command": "click",
+      "target": "id=cart-button-1-plus",
+      "targets": [
+        ["id=cart-button-1-plus", "id"],
+        ["css=.cart-line-group:nth-child(3) > #cart-line-nr-1 #cart-button-1-plus", "css:finder"],
+        ["xpath=//button[@id='cart-button-1-plus']", "xpath:attributes"],
+        ["xpath=//div[@id='cart-line-nr-1']/div[2]/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'+')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "597c7b21-7fd8-4505-874e-4cec7ed44407",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "id=cart-button-1-plus",
+      "targets": [
+        ["css=.checkout-as-guest > h1", "css:finder"],
+        ["xpath=//div[@id='ot-app']/div/div/div/div/h1", "xpath:idRelative"],
+        ["xpath=//div/div/div/h1", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d22e8a1c-9c6a-44ff-be65-b166577742c0",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=app-footer-proceed-button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6436536f-087f-421e-8316-92a2431a9f8b",
+      "comment": "",
+      "command": "click",
+      "target": "id=app-footer-proceed-button",
+      "targets": [
+        ["id=app-footer-proceed-button", "id"],
+        ["css=#app-footer-proceed-button", "css:finder"],
+        ["xpath=//button[@id='app-footer-proceed-button']", "xpath:attributes"],
+        ["xpath=//footer[@id='main-footer']/div/div[4]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "750c5e27-ab29-4629-8ab6-7bc9836eb386",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.checkout-as-guest .button",
+      "targets": [],
+      "value": "ORDER AS A GUEST"
+    }, {
+      "id": "3abb9852-d81c-4eb5-bc0c-64b2b46acb98",
+      "comment": "",
+      "command": "click",
+      "target": "css=.checkout-as-guest .button",
+      "targets": [
+        ["css=.checkout-as-guest .button", "css:finder"],
+        ["xpath=//a[contains(text(),'Order as a guest')]", "xpath:link"],
+        ["xpath=//div[@id='ot-app']/div/div/div/div/div[3]/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/en/shop/tickets/buy/checkout/guest')]", "xpath:href"],
+        ["xpath=//div[3]/div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcc4e322-7821-4d44-a292-8c0771afce82",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "8f536abc-04cd-4ad6-86e9-c6ce9d07598b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7d8ebecc-538a-47b1-b601-1160671ce148"]
+  }],
+  "urls": ["https://www.kunsthaus.ch/en/museum/"],
+  "plugins": []
+}
